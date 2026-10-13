@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForensiQuest | Virtual Laboratory</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">FORENSIQUEST</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#explore">Explore</a>
+            <a href="crime-scene.html">Crime Scene</a>
+            <a href="laboratory.html" style="color:var(--accent-red);">Laboratory</a>
+            <a href="cases.html">Case Studies</a>
+            <a href="student-zone.html">Student Zone</a>
+            <a href="about.html">About</a>
+        </div>
+        <div style="display: flex; align-items: center;">
+            <button class="theme-toggle">🌙</button>
+            <button class="menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <section>
+        <h2>VIRTUAL FORENSIC LAB</h2>
+        <p style="color: var(--text-muted);">Explore different analytical methods used by forensic scientists to process evidence.</p>
+        
+        <div class="grid">
+            <div class="card">
+                <h3>🧬 DNA Analysis</h3>
+                <p>Simulate DNA profile comparison using gel electrophoresis and capillary electrophoresis techniques.</p>
+            </div>
+            <div class="card">
+                <h3>🩸 Blood Analysis</h3>
+                <p>Determine blood type (ABO typing) and detect the presence of hidden blood using the Luminol test.</p>
+            </div>
+            <div class="card">
+                <h3>🖐 Fingerprint Examination</h3>
+                <p>Run AFIS (Automated Fingerprint Identification System) simulations and match minutiae points.</p>
+            </div>
+            <div class="card">
+                <h3>🧪 Toxicology</h3>
+                <p>Test biological samples for illicit substances, toxins, and heavy metals using GC-MS.</p>
+            </div>
+            <div class="card">
+                <h3>📝 Document Examination</h3>
+                <p>Analyze handwriting patterns, indented writing (ESDA), and perform ink chromatography.</p>
+            </div>
+            <div class="card">
+                <h3>🔬 Trace Evidence</h3>
+                <p>Examine hair morphology, natural/synthetic fibers, and glass refractive index under simulated microscopes.</p>
+            </div>
+        </div>
+
+        <div class="lab-simulation" id="dna-sim">
+            <h3 style="color: var(--accent-red); margin-bottom: 1rem;">DNA Analysis Simulation</h3>
+            <p>Compare crime scene <strong>Sample A</strong> with the <strong>Suspect Reference Sample</strong> using a simulated Gel Electrophoresis profile.</p>
+            
+            <div class="dna-bands">
+                <!-- Sample A -->
+                <div class="dna-lane">
+                    <div class="band" style="top: 15%;"></div>
+                    <div class="band" style="top: 35%;"></div>
+                    <div class="band" style="top: 50%;"></div>
+                    <div class="band" style="top: 80%;"></div>
+                </div>
+                <!-- Reference Sample -->
+                <div class="dna-lane">
+                    <div class="band" style="top: 15%;"></div>
+                    <div class="band" style="top: 35%;"></div>
+                    <div class="band" style="top: 50%;"></div>
+                    <div class="band" style="top: 80%;"></div>
+                </div>
+            </div>
+            
+            <button class="btn btn-primary" id="compare-dna-btn" style="font-size: 1.1rem; padding: 1rem 2rem;">COMPARE DNA PROFILES</button>
+            <div class="dna-result" id="dna-result">
+                DNA PROFILE MATCH: 99.9%
+                <p style="font-size: 0.85rem; color: var(--text-muted); font-weight: normal; margin-top: 10px; font-family: 'Inter', sans-serif;">* SIMULATED EDUCATIONAL RESULTS *</p>
+            </div>
+        </div>
+    </section>
+
+    <button id="btt-btn" class="back-to-top">↑</button>
+    <script src="js/script.js"></script>
+</body>
+</html>

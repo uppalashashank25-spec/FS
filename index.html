@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForensiQuest | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">FORENSIQUEST</div>
+        <div class="nav-links">
+            <a href="index.html" style="color:var(--accent-red);">Home</a>
+            <a href="index.html#explore">Explore</a>
+            <a href="crime-scene.html">Crime Scene</a>
+            <a href="laboratory.html">Laboratory</a>
+            <a href="cases.html">Case Studies</a>
+            <a href="student-zone.html">Student Zone</a>
+            <a href="about.html">About</a>
+        </div>
+        <div style="display: flex; align-items: center;">
+            <button class="theme-toggle">🌙</button>
+            <button class="menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Uncover the Evidence.<br>Discover the Truth.</h1>
+        <p>Explore the science behind crime investigation through interactive forensic learning, virtual evidence analysis and case-based challenges.</p>
+        <div class="btn-group">
+            <a href="crime-scene.html" class="btn btn-primary">START INVESTIGATION</a>
+            <a href="#explore" class="btn btn-secondary">EXPLORE FORENSIC SCIENCE</a>
+        </div>
+    </header>
+
+    <section id="explore">
+        <h2>Explore Forensic Science</h2>
+        <p style="color: var(--text-muted); margin-bottom: 2rem;">Click on a discipline to learn more about its methods and real-world applications.</p>
+        <div class="grid">
+            <div class="card discipline-card">
+                <h3>🔎 Crime Scene Investigation</h3>
+                <p>Learn how to secure, document, and collect evidence at a crime scene.</p>
+            </div>
+            <div class="card discipline-card">
+                <h3>🧬 DNA Forensics</h3>
+                <p>Analyze genetic material to identify suspects or victims.</p>
+            </div>
+            <div class="card discipline-card">
+                <h3>🧪 Forensic Toxicology</h3>
+                <p>Detect drugs, alcohol, and poisons in biological samples.</p>
+            </div>
+            <div class="card discipline-card">
+                <h3>🖐 Fingerprint Analysis</h3>
+                <p>Compare friction ridge patterns to establish identity.</p>
+            </div>
+            <div class="card discipline-card">
+                <h3>🦷 Forensic Odontology</h3>
+                <p>Use dental records and bite marks for identification.</p>
+            </div>
+            <div class="card discipline-card">
+                <h3>💻 Digital Forensics</h3>
+                <p>Recover and analyze data from electronic devices.</p>
+            </div>
+            <div class="card discipline-card">
+                <h3>🔬 Forensic Biology</h3>
+                <p>Study biological fluids and tissues found at crime scenes.</p>
+            </div>
+            <div class="card discipline-card">
+                <h3>💀 Forensic Anthropology</h3>
+                <p>Analyze skeletal remains to determine age, sex, and ancestry.</p>
+            </div>
+            <div class="card discipline-card">
+                <h3>🪰 Forensic Entomology</h3>
+                <p>Use insects to estimate the postmortem interval (PMI).</p>
+            </div>
+            <div class="card discipline-card">
+                <h3>📝 Questioned Documents</h3>
+                <p>Examine handwriting, paper, and ink for forgery.</p>
+            </div>
+            <div class="card discipline-card">
+                <h3>🔫 Forensic Ballistics</h3>
+                <p>Analyze firearms, bullets, and gunshot residue.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Discipline details -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2 id="modal-title">Discipline Title</h2>
+            <hr style="margin: 1rem 0; border-color: var(--glass-border);">
+            <p id="modal-text">Details will be loaded dynamically.</p>
+        </div>
+    </div>
+
+    <button id="btt-btn" class="back-to-top">↑</button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

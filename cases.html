@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForensiQuest | Case Studies</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">FORENSIQUEST</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#explore">Explore</a>
+            <a href="crime-scene.html">Crime Scene</a>
+            <a href="laboratory.html">Laboratory</a>
+            <a href="cases.html" style="color:var(--accent-red);">Case Studies</a>
+            <a href="student-zone.html">Student Zone</a>
+            <a href="about.html">About</a>
+        </div>
+        <div style="display: flex; align-items: center;">
+            <button class="theme-toggle">🌙</button>
+            <button class="menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <section>
+        <h2>FORENSIC CASE FILES</h2>
+        <p style="color: var(--text-muted); margin-bottom: 2rem;">Review simulated case files to understand how different disciplines of forensics work together to solve a crime.</p>
+        
+        <div class="grid" style="margin-bottom: 3rem;">
+            <div class="card">
+                <h3>CASE 001 – The Locked Room</h3>
+                <p><strong>Description:</strong> A victim is found unconscious in a secure, locked room. There are no signs of forced entry.</p>
+                <p><strong>Evidence:</strong> Broken glass shards, partial latent fingerprint on the doorknob, and a trace bloodstain.</p>
+                <p><strong>Suspects:</strong> 3 individuals with known motives.</p>
+                <button class="btn btn-secondary mt-2">View Case Details</button>
+            </div>
+            <div class="card">
+                <h3>CASE 002 – The Missing Evidence</h3>
+                <p><strong>Description:</strong> A high-profile museum theft involving missing historical jewels.</p>
+                <p><strong>Evidence:</strong> Muddy footwear impression near the display, stray synthetic fibers caught on a sharp edge.</p>
+                <p><strong>Suspects:</strong> 2 overnight staff members.</p>
+                <button class="btn btn-secondary mt-2">View Case Details</button>
+            </div>
+            <div class="card">
+                <h3>CASE 003 – The Laboratory Mystery</h3>
+                <p><strong>Description:</strong> A leading scientist is found poisoned in their own research laboratory.</p>
+                <p><strong>Evidence:</strong> An unlabeled chemical vial, a broken syringe, and wiped digital access logs.</p>
+                <p><strong>Suspects:</strong> A rival researcher who had access to the facility.</p>
+                <button class="btn btn-secondary mt-2">View Case Details</button>
+            </div>
+        </div>
+
+        <hr style="border-color: var(--glass-border); margin: 4rem 0;">
+
+        <h2 style="text-align: center;">SOLVE THE CASE GAME</h2>
+        <p style="text-align:center; margin-bottom: 2rem; color: var(--text-muted); max-width: 600px; margin-left: auto; margin-right: auto;">Put your knowledge to the test. Take this interactive forensic quiz based on standard real-world investigation procedures.</p>
+        
+        <div class="quiz-container" id="quiz-container">
+            <h3 style="text-align: center; margin-bottom: 1rem;">Are you ready to investigate?</h3>
+            <div style="text-align: center;">
+                <button class="btn btn-primary mt-2" id="start-quiz-btn" style="font-size: 1.2rem; padding: 1rem 3rem;">START INVESTIGATION</button>
+            </div>
+        </div>
+    </section>
+
+    <button id="btt-btn" class="back-to-top">↑</button>
+    <script src="js/script.js"></script>
+</body>
+</html>

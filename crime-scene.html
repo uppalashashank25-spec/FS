@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForensiQuest | Virtual Crime Scene</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">FORENSIQUEST</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#explore">Explore</a>
+            <a href="crime-scene.html" style="color:var(--accent-red);">Crime Scene</a>
+            <a href="laboratory.html">Laboratory</a>
+            <a href="cases.html">Case Studies</a>
+            <a href="student-zone.html">Student Zone</a>
+            <a href="about.html">About</a>
+        </div>
+        <div style="display: flex; align-items: center;">
+            <button class="theme-toggle">🌙</button>
+            <button class="menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <section>
+        <h2>VIRTUAL CRIME SCENE</h2>
+        <p style="color: var(--text-muted);">Interact with the pulsing evidence markers to document and collect items from the scene.</p>
+        
+        <div class="scene-container">
+            <div class="scene-image-wrapper">
+                <!-- Using a dark thematic placeholder image from Unsplash for crime scene -->
+                <!-- Markers placed absolutely -->
+                <div class="evidence-marker" data-type="Bloodstain" style="top: 35%; left: 45%;">1</div>
+                <div class="evidence-marker" data-type="Fingerprint" style="top: 55%; left: 75%;">2</div>
+                <div class="evidence-marker" data-type="Weapon (Knife)" style="top: 80%; left: 30%;">3</div>
+                <div class="evidence-marker" data-type="Mobile Phone" style="top: 65%; left: 15%;">4</div>
+                <div class="evidence-marker" data-type="Hair Fiber" style="top: 25%; left: 60%;">5</div>
+                <div class="evidence-marker" data-type="Footwear Impression" style="top: 85%; left: 80%;">6</div>
+            </div>
+            
+            <div class="evidence-panel">
+                <h3 style="margin-bottom: 1rem; border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem;">Evidence Bag</h3>
+                <p>Items Collected: <strong id="evidence-counter" style="color: var(--accent-red); font-size: 1.2rem;">0</strong> / 6</p>
+                <ul class="evidence-list" id="collected-evidence-list">
+                    <!-- Collected Evidence items will appear here -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="chain-of-custody" style="padding-top: 2rem;">
+        <h2 style="text-align: center;">CHAIN OF CUSTODY</h2>
+        <p style="text-align:center; color: var(--text-muted); max-width: 600px; margin: 0 auto;">Maintaining a chronological record of who handled the evidence is vital to ensure it is admissible in a court of law.</p>
+        
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h4 style="color: var(--accent-red);">1. Evidence Collected</h4>
+                    <p>Properly documented at the scene using photography and sketches.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h4 style="color: var(--accent-red);">2. Packaged</h4>
+                    <p>Secured in appropriate materials (e.g., paper bags for biologicals to prevent mold).</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h4 style="color: var(--accent-red);">3. Sealed</h4>
+                    <p>Tamper-evident seal applied with the investigator's initials and date across the seal.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h4 style="color: var(--accent-red);">4. Transferred</h4>
+                    <p>Logged in and physically moved to a secure evidence locker or directly to the forensic lab.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h4 style="color: var(--accent-red);">5. Laboratory Examination</h4>
+                    <p>Analyzed by forensic experts under controlled conditions.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h4 style="color: var(--accent-red);">6. Report Generated</h4>
+                    <p>Scientific findings compiled into a formal, peer-reviewed report.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h4 style="color: var(--accent-red);">7. Court Presentation</h4>
+                    <p>Presented as reliable, untampered evidence during legal proceedings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <button id="btt-btn" class="back-to-top">↑</button>
+    <script src="js/script.js"></script>
+</body>
+</html>
